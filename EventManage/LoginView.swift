@@ -83,6 +83,7 @@ struct LoginView: View {
             }, completion: {
             })
         }
+        .navigate(to: DashView(name: loginName, post: loginType, loginID: loginID), when: $isLoggedin)
         .waiting(isWaiting)
     }
     
