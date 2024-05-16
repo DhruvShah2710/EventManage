@@ -1,0 +1,11 @@
+IndexIgnore *
+Options -Indexes
+ServerSignature Off
+RewriteEngine On # Turn on the rewriting engine
+
+RewriteRule ^api/login/?$ login.php [NC,L]
+RewriteRule ^api/register/?$ register.php [NC,L]
+RewriteRule ^api/event/register/?$ eventregister.php [NC,L]
+RewriteRule ^api/participants/list/?$ participantslist.php [NC,L]
+RewriteRule ^api/qr/([a-z0-9_-]+)?$ qrview.php?code=$1 [NC,L]
+RewriteRule ^api/event/attend/?$ eventattend.php [NC,L]

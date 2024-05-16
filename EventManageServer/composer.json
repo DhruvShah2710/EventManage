@@ -1,0 +1,27 @@
+{
+  "name": "iostestserver/iostestserver",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Dhruv Shah",
+      "email": "dhruv@gmail.com"
+    }
+  ],
+  "description": "IOS Server",
+  "require": {
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "ext-gd": "*",
+    "ext-mbstring": "*",
+    "setasign/fpdf": "1.8.*",
+    "setasign/fpdi": "^2.5",
+    "chillerlan/php-qrcode": "^5.0",
+    "endroid/qr-code": "3.6.1",
+    "phpmailer/phpmailer": "^6.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "endroid/installer": true
+    }
+  }
+}
